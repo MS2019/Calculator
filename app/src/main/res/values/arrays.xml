@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="length">
+        <item>米</item>
+        <item>千米</item>
+        <item>光年</item>
+        <item>英里</item>
+        <item>海里</item>
+    </string-array>
+
+    <string-array name="quality">
+        <item>克</item>
+        <item>千克</item>
+        <item>吨</item>
+        <item>磅</item>
+        <item>盎司</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>年</item>
+        <item>周</item>
+        <item>天</item>
+        <item>时</item>
+        <item>分</item>
+        <item>秒</item>
+    </string-array>
+
+    <string-array name="storage">
+        <item>bit</item>
+        <item>B</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+    </string-array>
+
+</resources>

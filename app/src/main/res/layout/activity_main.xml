@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="8"
+    android:columnCount="4">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:background="#90CAF9"
+        android:textSize="50sp"
+        android:scrollbars="vertical"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/bt_left"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:text="(" />
+
+    <Button
+        android:id="@+id/bt_right"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:text=")"/>
+
+    <Button
+        android:id="@+id/bt_x1"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:text="x!"/>
+
+    <Button
+        android:id="@+id/bt_xy"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:text="x^y"/>
+
+    <Button
+        android:id="@+id/bt_radical"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="√" />
+
+    <Button
+        android:id="@+id/bt_sin"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:text="sin" />
+
+    <Button
+        android:id="@+id/bt_cos"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:text="cos" />
+
+    <Button
+        android:id="@+id/bt_tan"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:textAllCaps="false"
+        android:text="tan" />
+
+    <Button
+        android:id="@+id/bt_mod"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="%"/>
+
+    <Button
+        android:id="@+id/bt_clear"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/bt_back"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="←"/>
+
+    <Button
+        android:id="@+id/bt_divide"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="÷"/>
+
+    <Button
+        android:id="@+id/bt7"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/bt9"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/bt_multiply"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="×"/>
+
+    <Button
+        android:id="@+id/bt4"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="4"/>
+
+    <Button
+        android:id="@+id/bt5"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="5"/>
+
+    <Button
+        android:id="@+id/bt6"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/bt_subtract"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/bt1"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/bt2"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/bt3"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="3"/>
+
+    <Button
+        android:id="@+id/bt_add"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/bt0"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/bt_dot"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        android:text="."/>
+
+    <Button
+        android:id="@+id/bt_equal"
+        android:background="#4FC3F7"
+        android:textStyle="italic"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="@dimen/text_size"
+        android:text="="/>
+
+
+
+</GridLayout>
