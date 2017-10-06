@@ -3,6 +3,7 @@ package com.example.ms.calculator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -28,8 +29,6 @@ public class ConversionActivity extends AppCompatActivity implements View.OnClic
     Spinner length2_spinner;
     Spinner quality1_spinner;
     Spinner quality2_spinner;
-    Spinner time1_spinner;
-    Spinner time2_spinner;
     Spinner storage1_spinner;
     Spinner storage2_spinner;
 
@@ -39,7 +38,6 @@ public class ConversionActivity extends AppCompatActivity implements View.OnClic
 
     TextView hint_view;
     int i=0;
-    Conversion conversion = new Conversion();
 
 
     @Override
@@ -47,33 +45,32 @@ public class ConversionActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conversion);
 
-        conversion_button = (Button)findViewById(R.id.conversion_button);
+        conversion_button = (Button) findViewById(R.id.conversion_button);
         conversion_button.setOnClickListener(this);
-        clear1_button = (Button)findViewById(R.id.clear1_button);
+        clear1_button = (Button) findViewById(R.id.clear1_button);
         clear1_button.setOnClickListener(this);
-        hint_button = (Button)findViewById(R.id.hint_button);
+        hint_button = (Button) findViewById(R.id.hint_button);
         hint_button.setOnClickListener(this);
 
-        length1_spinner = (Spinner)findViewById(R.id.length1_spinner);
-        length2_spinner = (Spinner)findViewById(R.id.length2_spinner);
-        quality1_spinner = (Spinner)findViewById(R.id.quality1_spinner);
-        quality2_spinner = (Spinner)findViewById(R.id.quality2_spinner);
-        storage1_spinner = (Spinner)findViewById(R.id.storage1_spinner);
-        storage2_spinner = (Spinner)findViewById(R.id.storage2_spinner);
+        length1_spinner = (Spinner) findViewById(R.id.length1_spinner);
+        length2_spinner = (Spinner) findViewById(R.id.length2_spinner);
+        quality1_spinner = (Spinner) findViewById(R.id.quality1_spinner);
+        quality2_spinner = (Spinner) findViewById(R.id.quality2_spinner);
+        storage1_spinner = (Spinner) findViewById(R.id.storage1_spinner);
+        storage2_spinner = (Spinner) findViewById(R.id.storage2_spinner);
 
-        angle_edit = (EditText)findViewById(R.id.angle_edit);
-        radian_edit = (EditText)findViewById(R.id.radian_edit);
-        centigrade_edit = (EditText)findViewById(R.id.centigrade_edit);
-        fahrenheit_edit = (EditText)findViewById(R.id.fahrenheit_edit);
-        length2_edit = (EditText)findViewById(R.id.length1_edit);
-        length2_edit = (EditText)findViewById(R.id.length2_edit);
-        quality1_edit = (EditText)findViewById(R.id.quality1_edit);
-        quality2_edit = (EditText)findViewById(R.id.quality2_edit);
-        storage1_edit = (EditText)findViewById(R.id.storage1_edit);
-        storage2_edit = (EditText)findViewById(R.id.storage2_edit);
+        angle_edit = (EditText) findViewById(R.id.angle_edit);
+        radian_edit = (EditText) findViewById(R.id.radian_edit);
+        centigrade_edit = (EditText) findViewById(R.id.centigrade_edit);
+        fahrenheit_edit = (EditText) findViewById(R.id.fahrenheit_edit);
+        length2_edit = (EditText) findViewById(R.id.length1_edit);
+        length2_edit = (EditText) findViewById(R.id.length2_edit);
+        quality1_edit = (EditText) findViewById(R.id.quality1_edit);
+        quality2_edit = (EditText) findViewById(R.id.quality2_edit);
+        storage1_edit = (EditText) findViewById(R.id.storage1_edit);
+        storage2_edit = (EditText) findViewById(R.id.storage2_edit);
 
-        hint_view = (TextView)findViewById(R.id.hint_view);
-
+        hint_view = (TextView) findViewById(R.id.hint_view);
     }
 
     //清空
@@ -103,9 +100,9 @@ public class ConversionActivity extends AppCompatActivity implements View.OnClic
                 if(i==0) {
                     i=1;
                     hint_view.setText("1、根据需要换算的单位类型在12种输入框中选择需要的一种，" +
-                            "输入相应数字或者小数，点击“换算”按钮，" +
+                            "输入相应数值或者小数，点击“换算”按钮，" +
                             "程序就会自动换算成对应的单位数并输出结果。\n" +
-                            "2、米，克，年，bit可以点击选择不同单位类型，每一次只能输入一种单位数进行换算，否则提示错误。\n"+
+                            "2、米，克，KB可以点击选择不同单位类型，每一次只能输入一种单位数进行换算，否则提示错误。\n"+
                             "3、每一次得到输出结果之后，进行下一次输入之前，都需要点击“清空”按钮之后才能进行输入。");
                 }
                 else {
