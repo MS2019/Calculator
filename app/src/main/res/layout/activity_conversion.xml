@@ -163,45 +163,6 @@
         android:layout_height="wrap_content">
 
         <Spinner
-            android:id="@+id/time1_spinner"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:entries="@array/time"/>
-
-        <EditText
-            android:id="@+id/time1_edit"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:digits="0123456789."
-            android:hint="0-9或小数"
-            android:scrollbars="vertical"
-            android:maxLines="1"/>
-
-        <Spinner
-            android:id="@+id/time2_spinner"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:entries="@array/time"/>
-
-        <EditText
-            android:id="@+id/time2_edit"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:digits="0123456789."
-            android:hint="0-9或小数"
-            android:scrollbars="vertical"
-            android:maxLines="1"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Spinner
             android:id="@+id/storage1_spinner"
             android:layout_width="80dp"
             android:layout_height="wrap_content"

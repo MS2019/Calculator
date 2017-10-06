@@ -58,8 +58,6 @@ public class ConversionActivity extends AppCompatActivity implements View.OnClic
         length2_spinner = (Spinner)findViewById(R.id.length2_spinner);
         quality1_spinner = (Spinner)findViewById(R.id.quality1_spinner);
         quality2_spinner = (Spinner)findViewById(R.id.quality2_spinner);
-        time1_spinner = (Spinner)findViewById(R.id.time1_spinner);
-        time2_spinner = (Spinner)findViewById(R.id.time2_spinner);
         storage1_spinner = (Spinner)findViewById(R.id.storage1_spinner);
         storage2_spinner = (Spinner)findViewById(R.id.storage2_spinner);
 
@@ -71,8 +69,6 @@ public class ConversionActivity extends AppCompatActivity implements View.OnClic
         length2_edit = (EditText)findViewById(R.id.length2_edit);
         quality1_edit = (EditText)findViewById(R.id.quality1_edit);
         quality2_edit = (EditText)findViewById(R.id.quality2_edit);
-        time1_edit = (EditText)findViewById(R.id.time1_edit);
-        time2_edit = (EditText)findViewById(R.id.time2_edit);
         storage1_edit = (EditText)findViewById(R.id.storage1_edit);
         storage2_edit = (EditText)findViewById(R.id.storage2_edit);
 
