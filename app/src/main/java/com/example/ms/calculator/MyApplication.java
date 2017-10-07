@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 /**
+ * 获取全局content
  * Created by MS on 2017/9/12.
  */
 
