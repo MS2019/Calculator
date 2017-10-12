@@ -14,7 +14,7 @@ public class Calculation {
 
     Gamma gam = new Gamma();
 
-    Stack<Double> numberStack = new Stack<>();    //数字栈
+    Stack<Double> numberStack = new Stack<>();    //运算数栈
     Stack<Character> operatorStack = new Stack<>();   //运算符栈
 
     public void Clear(){                     //清除两个栈中的数据
