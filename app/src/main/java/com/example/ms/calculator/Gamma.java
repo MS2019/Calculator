@@ -15,6 +15,4 @@ public class Gamma {                  //伽玛函数计算小数的阶乘
         double x = Math.exp(w);
         return x;
     }
-
-
 }
